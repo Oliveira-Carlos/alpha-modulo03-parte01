@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Desvendando o cubo mágico</title>
+    <style>
+    body{
+        background-color: aliceblue;
+        text-align: center;
+    }   
+    .lista{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <h1 style="color:blue">
+    Desvendando o cubo mágico :) Por Carlos Oliveira </h1>
+    <a href="./">
+    <img src="./assets/icon.svg"
+    width="200"></a>
+    </header>
+    <h2>Hoje você irá aprender a resolver o cubo mágico pelo método de camadas</h2>
+    <h3>São apenas <mark>8 passos</mark>:</h3>
+    <ol class="lista">
+        <li>cruz branca no centro amarelo</li>
+        <li>cruz branca no centro branco</li>
+        <li>primeira camada</li>
+        <li>segunda camada</li>
+        <li>cruz amarela na 3ª camada</li>
+        <li>orientação da 3ª camada</li>
+        <li>permutação do cantos da 3ª camada</li>
+        <li>permutação dos meios da 3ª camada</li>
+    </ol>
+    <h3>Primeiramente vamos introduzir alguns conceitos sobre o cubo mágico: </h3>
+        <ul class="lista">
+            <li>O cubo possui 6 faces com cores padronizadas:
+                 branco, amarelo, azul, verde, vermelho e laranja</li>
+            <li>Suas peças são nomeadas da seguinte forma:
+                 centros(possuem apenas uma cor), meios(possuem 2 cores) e cantos(possuem 3 cores)</li>
+            <li>Sobre os movimentos básicos, <strong>muito importante</strong>:</li>  
+        </ul>
+            <table>
+                <tr>
+            <td>R - right / direita horário.</td>
+            <td>R' - right / direita anti-horário.</td>
+            <td>R2 - right / direita duplo.
+        </tr>
+        <tr>
+            <td>L - left / esquerda horário.</td>
+            <td>L' - left / esquerda anti-horário.</td>
+            <td>L2 - left / esquerda duplo.</td>
+        </tr>
+            <td>U - up / topo horário.</td>
+            <td>D - down / base horário.</td>
+            <td>F - front / face horário.</td>
+            <tr>
+            <td>B - back / atrás horário.  </td>
+        </tr>
+        </table> 
+<h3>Vamos lá!</h3>
+<p><b>Antes de começarmos, tenha seu cubo em mãos e embaralhe o mesmo aleatoriamente</b></p>
+ <h3>1º PASSO: PREPARAR A CRUZ BRANCA NO CENTRO <ins>AMARELO</ins></h3>
+<p>No primeiro passo vamos posicionar os 4 meios brancos ao redor do centro amarelo.</p>
+ <img width="200" height="200" src="./assets/01.svg">
+    <h3>2º PASSO: FINALIZAR A CRUZ NO CENTRO <ins>BRANCO</ins></h3>
+    <P>Agora é só descer os meios brancos que preparamos ao redor do centro amarelo 
+    para a base do cubo, ao redor do centro branco, prestando muita atenção
+    para colocar os meios correspondentes com cada centro.</P>
+    <img width="200" height="200" src="./assets/02.svg">
+        <h3>3º PASSO: PRIMEIRA CAMADA</h3>
+        <p>No terceiro passo vamos finalizar toda a camada branca, 
+        colocando os 4 cantos brancos na base do cubo ao redor da cruz branca.</p>
+        <img width="200" height="200" src="./assets/03.svg">
+            <h3>4º PASSO: SEGUNDA CAMADA</h3>
+            <p>No quarto passo nós iremos colocar os meios na segunda camada do cubo, 
+            com isso já teremos as duas primeiras camadas prontas.</p>
+            <img width="200" height="200" src="./assets/04.svg">
+                <h3>5º PASSO: CRUZ AMARELA NA 3ª CAMADA</h3>
+                <p>No quinto passo iremos fazer uma cruz no lado amarelo
+                utilizando apenas 1 fórmula de 6 movimentos.</p>
+                <img width="200" height="200" src="./assets/05.svg">
+                    <h3>6º PASSO: ORIENTAÇÃO DA 3ª CAMADA</h3>
+                    <p>Neste passo nós vamos orientar todo o lado amarelo do cubo, 
+                    restando apenas a permutação das laterias. estamos quase lá!</p>
+                    <img width="200" height="200" src="./assets/06.svg">
+                        <h3>7º PASSO: PERMUTAÇÃO DOS CANTOS DA 3ª CAMADA</h3>
+                        <p>Agora, nós iremos finalizar todas os cantos da última camada utilizando 
+                        apenas 1 fórmula. Estamos a um passo de finalizar!</p>
+                        <img width="200" height="200" src="./assets/07.svg">
+                            <h3>8º PASSO: PERMUTAÇÃO DOS MEIOS DA 3ª CAMADA</h3>
+                            <p>Chegamos ao último passo! Só nos resta permutar os meios da última camada 
+                            utilizando 1 fórmula com apenas 2 variações.</p>
+                            <img width="200" height="200" src="./assets/08.svg">
+</body>
+<footer>
+    <p><strong>A página ainda está em construção, 
+    logo logo teremos a explicação mais detalhada de cada passo :)</strong></p>
+    <p> Acesse meu <a href="https://github.com/Oliveira-Carlos/alpha-modulo03-parte01" 
+        target="https://github.com/Oliveira-Carlos/alpha-modulo03-parte01"
+     >repositório no GitHub</a> para visualizar o código por trás desta página.</p>
+</footer>
+</html>
